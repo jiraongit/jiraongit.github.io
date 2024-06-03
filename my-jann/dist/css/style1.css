@@ -1,0 +1,395 @@
+body{
+    background-color: #9DB2BF;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Foot.jpg.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tittle-1{
+    text-shadow: red;
+}
+/* Product Section */
+.Pembungkus-Product{
+    display: grid;
+    grid-template-columns: 25% auto;
+   
+}
+.Pembungkus-Sidebar{    /* SideBar Produk */
+   position: relative;
+   color: #ffff;
+   border-radius: 50px;
+
+}
+.Sidebar{
+    position: relative;
+    background-color: #5f5f5fb4;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    box-sizing: border-box;
+    top: 80px; /* = Tinggi Navbar */
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 20px 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 0px;
+    margin-top: -80px;
+}
+.Sidebar h2{
+    font-family: Poppins;
+    font-size: 19px;
+    padding: 10px 15px;
+    background-color: var(--ws);
+    border-radius: 5px;
+}
+.List-Product{
+   margin-top: 15%;
+}
+.List-Product li{
+    padding: 0 5px;
+    list-style: none;
+    margin-bottom: 45px;
+    transition: .3s;
+}
+.List-Product li:hover{
+    transform: translateX(10px);
+}
+/* Icon > */
+.fa-caret-right{
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.List-Product li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: Poppins;
+    transition: .2s;
+}
+.List-Product li:hover a{
+    color: rgba(255, 255, 255, 0.623);
+}
+/* Option CRUD Edit,Tambah,Hapus */ 
+.Option-Barang{
+    width: 100%;
+    border-top: 1px solid #888888;
+    box-sizing: border-box;
+    margin-top: 13%;
+    display: flex;
+    column-gap: 7px;
+    padding: 20% 5px 0 5px;
+}
+.Option-Barang hr{
+    margin-bottom: 40px;
+}
+.Option-Barang p{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.Option-Barang a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    font-family: BPoppins;
+    font-size: 12px;
+    padding: 5px 10px;
+ 
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.Option-Barang .Btn-C{
+    flex: 1;
+}
+.Option-Barang .Btn-C:hover{
+    border: 1px solid #a9a9a9a0;
+}
+
+/* Link Ke Tambah Barang (Admin) */
+.Option-Barang .Btn-C .fa-plus{
+    font-size: 21px;
+    margin-right: 10px;
+    transition: .4s;
+}
+.Option-Barang .Btn-C:hover .fa-plus{
+    color: #a9a9a9a0;
+    transform: rotate(180deg);
+}
+
+/* Link Ke Keranjang Produk */
+.Option-Barang .fa-cart-shopping{
+    font-size: 22px;
+    margin-right: 10px;
+    color: black;
+    transition: .4s;
+}
+.Option-Barang .fa-cart-shopping{
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+/* Link Ke Like Produk */
+.Option-Barang .Btn-L:hover{
+    border: 1px solid red;
+}
+.Option-Barang .Btn-L .fa-heart{
+    font-size: 20px;
+    transition: .2s;
+}
+.Option-Barang .Btn-L:hover .fa-heart{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+/* Pembungkus Section Product */
+.Pembungkus-Section{
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: grid;
+    row-gap: 3rem;
+    background-color: var(--ws);    /* BG Product & Card */
+    padding-bottom: 100px;  
+    padding-left: 40px;
+}
+.Judul-Casual{
+    margin: 6% auto;
+    margin-bottom: 3%;
+    text-align: center;
+}
+.Judul-Casual h2{
+    font-size: 55px;
+    font-family: BFutura;
+    color: #ffff;
+}
+.Judul-Casual p{
+    font-size: 20px;
+    font-family: Poppins;
+    margin-left: 5px;
+    color: #7a7a7a;
+}
+#Casual{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 6rem;
+}
+.Judul-Running,
+.Judul-Basketball{
+    margin-inline: auto;
+    text-align: center;
+    font-family: BFutura;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+.Judul-Running h2,
+.Judul-Basketball h2{
+    font-size: 55px;
+    font-family: BFutura;
+}
+.Judul-Running p,
+.Judul-Basketball p{
+    font-size: 20px;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    color: #7a7a7a;
+}
+#Running{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 8rem;
+}
+#Basketball{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 8rem;
+}
+.Card{
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 470px;
+  background-color: var(--BGCard);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.499);
+  margin: 0 auto;  
+  z-index: 1;
+}
+.Card img{
+   width: 300px;
+   height: 250px;   /* Menyesuaikan Height Card */
+   margin-left: 45px;
+   object-fit: cover;
+}
+.Card .fa-bookmark{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Card-Text{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height:  220px;    /* Menyesuaikan Height Card */
+   border-radius: 0 0 20px 20px;
+   overflow: hidden;
+   background-color: hsla(0, 0%, 100%, 0.894);
+   font-family: Poppins;
+   padding: 20px 0;
+   box-sizing: border-box;
+}
+.Top-Text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+  
+}
+.Top-Text h4{
+    font-size: 23px;
+    /* width: 300px;
+    height: 40px; */
+    overflow: hidden;
+   
+}   
+.Top-Text-Icons i{
+    text-shadow: 0 4px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.fa-pen-to-square{
+    color: #FFA500;  
+}
+.Top-Text-Icons .fa-trash-can{
+    margin-left: 10px;
+    color: #c70000;
+}
+.Card-Text .Price {
+    color: rgb(139, 138, 138);
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 3px;
+    color: #0000006d;
+    margin-left: 25px;
+}
+.Rating{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    column-gap: 1px;
+    margin-top: 4%;
+}
+.Rating i{
+    font-size: 18px;
+    color: orange;
+}
+.Rating p{
+    margin-left: 6px;
+    font-size: 13px;
+    color: gray;
+}
+.Btn-Product{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+    position: absolute;
+    bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+}
+.Btn-Product .Btn-Cart{   /* Button Add To Cart Dalam Card */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+    background-color: white;
+
+    position: relative;
+    overflow: hidden;
+    padding: 4px 25px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.2s;
+}
+.Btn-Detail,
+.Btn-Cart{
+    margin-inline: 2px;
+    font-family: Poppins;
+}
+.Btn-Product .Btn-Detail{
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    
+    padding: 4px 25px;
+    border: 1px solid black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.Btn-Cart:hover .fa-cart-shopping{
+    transform: rotate(10deg);
+}
+.fa-cart-shopping{
+    font-family: Poppins;
+    color:black;
+    font-size: 15px;
+    margin-right: 10px;
+    transition: .2s;
+}
+.footer{
+    background-color: #5f5f5fb4;;
+    height: auto;
+    width: auto;
+    padding: 5px 5px 5px;
+    margin-left: -90px;
+    text-align: center;
+    color: #ffff;
+    border-radius: 20px;
+}.inputan{
+    background-color: transparent;
+    color: #ffff;
+    border: 1px solid white;
+    height: 31px;
+    width: 70%;
+    border-radius: 10px;
+    list-style: none;
+    outline: none;
+}
